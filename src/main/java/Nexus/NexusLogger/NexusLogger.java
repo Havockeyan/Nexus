@@ -10,7 +10,7 @@ public class NexusLogger {
     private File logFileObject;
 
     private NexusLogger() {
-        this(System.getProperty("user.dir") + "/nexus.txt");
+        this(System.getProperty("user.dir") + "/nexus.log");
     }
 
     private NexusLogger(String fileLocation) {
