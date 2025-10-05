@@ -1,5 +1,6 @@
 package Nexus;
 
+import Nexus.HttpParser.HttpParser;
 import Nexus.NexusLogger.NexusLogger;
 
 import java.io.BufferedReader;
@@ -34,9 +35,10 @@ public class NexusServerImpl implements NexusServer{
                 // Converting to Buffered Reader
                 BufferedReader httpRequestReader = new BufferedReader(new InputStreamReader(inputStream));
                 //Parsing the HTTP request
-                LOGGER.log(httpRequestReader.readLine());
+//                LOGGER.log(httpRequestReader.readLine());
+                HttpParser.parse(httpRequestReader);
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

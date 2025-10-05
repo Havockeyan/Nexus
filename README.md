@@ -147,6 +147,15 @@ Potential improvements for this HTTP server:
 - Multi-threading support
 - HTTPS support
 
+## Next Phase: HTTPS Implementation
+
+For the next phase of this project, the server will be upgraded to support HTTPS instead of HTTP. This will require:
+- Implementing SSL/TLS in the server code
+- Handling certificates for secure connections
+- Updating client and server communication to use secure sockets
+
+Further instructions and details will be provided in future updates.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
